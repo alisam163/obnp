@@ -1,0 +1,30 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="registration">
+<form method="POST">
+    {% csrf_token %}
+    <div class="reg_form">
+        <div class="item_form">
+            {{ form.username.label }}
+            {{ form.username }}
+        </div>
+        <div class="item_form">
+            {{ form.email.label }}
+            {{ form.email }}
+        </div>
+        <div class="item_form">
+            {{ form.password1.label }}
+            {{ form.password1 }}
+        </div>
+        <div class="item_form">
+            {{ form.password2.label }}
+            {{ form.password2 }}
+        </div>
+            
+        <button type="submit">Отправить</button>
+    </div>
+</form>
+</div>
+{% endblock %}

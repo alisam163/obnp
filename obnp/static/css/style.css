@@ -1,0 +1,200 @@
+
+/* FONTS
+
+font-family: 'Vollkorn', serif;
+font-family: 'Vollkorn SC', serif;
+
+*/
+
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLE */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 400;
+	background-image: url('../img/bg/bg.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	position: relative;
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: #000000;
+}
+
+/* HEADER */
+header {
+	font-family: 'Vollkorn SC';
+	font-style: normal;
+	font-weight: 600;
+}
+
+.container-header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 70px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.logo {
+	font-size: 36px;
+}
+
+.logo-link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.wrapper-signin {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0%;
+	padding: 0%;
+}
+
+.text { 
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+.signin {
+	font-family: 'Vollkorn SC';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27.86px;
+	border-bottom: 1px solid white;
+}
+
+.registration {
+	font-family: 'Vollkorn SC';
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20.9px;
+}
+
+.link-signin {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.link-registration {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.account {
+	font-family: 'Vollkorn SC';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27.86px;
+	border-bottom: 1px solid white;
+}
+
+.logout {
+	font-family: 'Vollkorn SC';
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20.9px;
+}
+
+.link-account {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.link-logout {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* MENU */
+
+nav.menu {
+	font-family: 'Vollkorn SC';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22.29px;
+	text-align: center;
+}
+
+.menu > a{
+	text-decoration: none;
+	color: #ffffff;
+	padding-right: 32px;
+}
+
+/* STYLE */
+
+#registration {
+	height: 600px;
+	border: 1px solid red;
+	position: relative;
+	top: 100px;
+}
+
+
+.reg_form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.item_form {
+	justify-items: flex-start;
+}

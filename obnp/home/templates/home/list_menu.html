@@ -1,0 +1,5 @@
+<nav class="menu">
+    {% for m in menu %}
+    <a href="{% url m.about %}">{{ m.title }}</a>
+    {% endfor %}
+</nav>
