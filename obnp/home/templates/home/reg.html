@@ -2,29 +2,35 @@
 {% load static %}
 {% block content %}
 
-<div id="registration">
+<div class="container_form_registration">
 <form method="POST">
     {% csrf_token %}
-    <div class="reg_form">
-        <div class="item_form">
-            {{ form.username.label }}
-            {{ form.username }}
+        <div class="item_form_registration">
+            <div>{{ form.username.label }}</div>
+            <div>{{ form.username }}</div>
         </div>
-        <div class="item_form">
-            {{ form.email.label }}
-            {{ form.email }}
+        <div class="item_form_registration">
+            <div>{{ form.email.label }}</div>
+            <div>{{ form.email }}</div>
         </div>
-        <div class="item_form">
-            {{ form.password1.label }}
-            {{ form.password1 }}
+        <div class="item_form_registration">
+            <div>{{ form.password1.label }}</div>
+            <div>{{ form.password1 }}</div>
         </div>
-        <div class="item_form">
-            {{ form.password2.label }}
-            {{ form.password2 }}
+        <div class="item_form_registration">
+            <div>{{ form.password2.label }}</div>
+            <div>{{ form.password2 }}</div>
         </div>
-            
-        <button type="submit">Отправить</button>
-    </div>
+        <div class="item_form_registration">
+            <div>
+                <input type="checkbox" class="checkbox_TermsOfUse">
+            </div>
+            <div class="text_TermsOfUse">Я прочитал(-а) <a href="#" class="link_TermsOfUse">соглашение</a> и согласен(-на)</div>
+        </div>
+        <div class="item_form_registration">
+            <div></div>
+            <div><button type="submit" class="btn_registration">Регистрация</button></div>
+        </div>
 </form>
 </div>
 {% endblock %}
