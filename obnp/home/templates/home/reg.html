@@ -5,6 +5,11 @@
 <div class="container_form_registration">
 <form method="POST">
     {% csrf_token %}
+            {% if form.non_field_errors %}
+            <div class="item_form_registration item_form_error">
+                {{ form.non_field_errors }}
+            </div>
+            {% endif %}
         <div class="item_form_registration">
             <div>{{ form.username.label }}</div>
             <div>{{ form.username }}</div>
@@ -23,7 +28,7 @@
         </div>
         <div class="item_form_registration">
             <div>
-                <input type="checkbox" class="checkbox_TermsOfUse">
+                {{ form.terms }}
             </div>
             <div class="text_TermsOfUse">Я прочитал(-а) <a href="#" class="link_TermsOfUse">соглашение</a> и согласен(-на)</div>
         </div>
