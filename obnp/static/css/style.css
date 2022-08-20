@@ -100,7 +100,7 @@ header {
 	text-decoration: none;
 }
 
-.wrapper-signin {
+.wrapper-login {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -113,7 +113,7 @@ header {
 	margin-bottom: 2px;
 }
 
-.signin {
+.login {
 	font-family: 'Vollkorn SC';
 	font-size: 20px;
 	font-weight: 600;
@@ -128,7 +128,7 @@ header {
 	line-height: 20.9px;
 }
 
-.link-signin {
+.link-login {
 	text-decoration: none;
 	color: #ffffff;
 }

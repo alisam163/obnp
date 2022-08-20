@@ -24,10 +24,10 @@
         
     </div>
     <div class="item-header">
-        <div class="wrapper-signin">
+        <div class="wrapper-login">
             {% if not user.is_authenticated %}
-            <div class="signin text">
-                <a href="{% url 'signin' %}" class="link-signin">Войти</a>
+            <div class="login text">
+                <a href="{% url 'login' %}" class="link-login">Войти</a>
             </div>
             <div class="registration text">
                 <a href="{% url 'registration' %}" class="link-registration">Регистрация</a>
